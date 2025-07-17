@@ -2,7 +2,8 @@ import { app, BrowserWindow } from "electron";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-createRequire(import.meta.url);
+const require2 = createRequire(import.meta.url);
+const fs = require2("fs");
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 process.env.APP_ROOT = path.join(__dirname, "..");
 const VITE_DEV_SERVER_URL = process.env["VITE_DEV_SERVER_URL"];
@@ -37,7 +38,10 @@ app.on("activate", () => {
     createWindow();
   }
 });
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  console.log("fs module type:", typeof fs.readFile);
+  createWindow();
+});
 export {
   MAIN_DIST,
   RENDERER_DIST,
