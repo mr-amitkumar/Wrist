@@ -12,7 +12,7 @@ import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 import { SiHdfcbank } from "react-icons/si";
 const Footer = () => {
   return (
-    <div className=" h-[100vh] sm:h-[60vh] bg-gray-800 text-white">
+    <div className=" h-[150vh] sm:h-[60vh] bg-gray-800 text-white">
       <div className="sm:flex grid grid-cols-2  gap-6 sm:gap-0 items-center align-middle justify-around flex-wrap ">
         <div className="flex flex-col gap-4 sm:ml-0 ml-6 mt-6">
           <h1 className="text-xl">Collections</h1>

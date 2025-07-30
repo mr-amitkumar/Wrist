@@ -96,7 +96,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center text-center align-middle">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-[200px] sm:w-full lg:grid-cols-5 gap-6 sm:max-w-6xl mx-auto pb-12">
           {Product.map((data) => (
             <div
@@ -119,41 +119,10 @@ const Home = () => {
               </button>
             </div>
           ))}
-          <div className="block mx-auto max-w-4xl ml-10">
+          <div className="flex items-center align-middle text-center mx-auto max-w-4xl ml-10">
             <button className=" border-none outline-none bg-red-500 px-2 py-1 text-white font-semibold cursor-pointer hover:bg-red-400 hover:text-black rounded-md ">
               Explore More
             </button>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex items-center justify-around flex-wrap">
-        <div className="p-4 shadow-lg rounded-sm sm:w-[300px]">
-          <img
-            src={LogoBanner}
-            alt=""
-            className="h-[200px] sm:h-[280px] rounded-sm"
-          />
-        </div>
-        <div className="flex flex-col gap-3 sm:text-xl text-[15px] p-4">
-          <h1 className="font-semibold sm:text-2xl">
-            Hurry Up to Grab the Deal's
-          </h1>
-          <div className="flex items-center gap-3">
-            <VscWorkspaceTrusted className="text-green-800 text-xl sm:text-2xl" />
-            <p>Buy With Our Trust</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <VscActivateBreakpoints className="text-orange-400 text-xl sm:text-2xl" />
-            <p>Earn Points On Every Purchase</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <GiBattery100 className="text-red-600 text-xl sm:text-2xl" />
-            <p>Free Battery Replacement</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <BsFillGiftFill className="text-yellow-700 text-xl sm:text-2xl" />
-            <p>Get Gifts On Deals</p>
           </div>
         </div>
       </div>
@@ -183,6 +152,36 @@ const Home = () => {
                 <p className="text-sm font-medium">{data.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center justify-around flex-wrap">
+        <div className="p-4 shadow-lg rounded-sm sm:w-[300px]">
+          <img
+            src={LogoBanner}
+            alt=""
+            className="h-[200px] sm:h-[280px] rounded-sm"
+          />
+        </div>
+        <div className="flex flex-col gap-3 sm:text-xl text-[15px] p-4">
+          <h1 className="font-semibold sm:text-2xl">
+            Hurry Up to Grab the Deal's
+          </h1>
+          <div className="flex items-center gap-3">
+            <VscWorkspaceTrusted className="text-green-800 text-xl sm:text-2xl" />
+            <p>Buy With Our Trust</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <VscActivateBreakpoints className="text-orange-400 text-xl sm:text-2xl" />
+            <p>Earn Points On Every Purchase</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <GiBattery100 className="text-red-600 text-xl sm:text-2xl" />
+            <p>Free Battery Replacement</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <BsFillGiftFill className="text-yellow-700 text-xl sm:text-2xl" />
+            <p>Get Gifts On Deals</p>
           </div>
         </div>
       </div>
